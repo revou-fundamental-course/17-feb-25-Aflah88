@@ -1,1 +1,103 @@
 /* Ini CSS Eksternal */
+
+#main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-company {
+    border-radius: 50px;
+    border: 1px solid;
+    height: 50px;
+    width: 50px;
+    background-image: url("assets/logo.png");
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+}
+
+body
+{font-family: arial;}
+
+nav>a {
+    
+        border: 1px solid;
+        color: black;
+        padding: 5px;
+        border-radius: 4px;
+        text-decoration: none;
+    
+}
+
+.no-border-radius{
+    border-radius: 0px;
+}
+
+.no-border-radius-right{    
+    border-top-left-radius: 4px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 4px;}
+
+.no-border-radius-left{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 0px;
+}
+
+.main-content{
+    display: flex;
+    gap: 24px;
+
+}
+
+.main-container{
+    border: 1px solid;
+    height: 400px;
+    flex: 200px;
+    text-align: center;
+    align-content: center;
+}
+
+#our-package-section>header {
+
+    text-align: center;
+    height: 100px;
+    align-content: center;
+    background: aliceblue;
+}
+
+.content-our-package {
+    border: 1px solid;
+    height: 300px;
+    text-align: center;
+    align-content: center;
+}
+
+#call-us-section>header {
+
+    text-align: center;
+    height: 100px;
+    align-content: center;
+    background-color: antiquewhite;
+}
+
+.content-call-us-package {
+    border: 1px solid;
+    height: 300px;
+    text-align: center;
+    align-content: center;
+}
+
+footer{
+    text-align: center;
+    content-align: 
+}
+
+main>header{
+    text-align: center;
+}
