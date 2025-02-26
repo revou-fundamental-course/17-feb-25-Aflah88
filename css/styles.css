@@ -11,7 +11,7 @@
     border: 1px solid;
     height: 50px;
     width: 50px;
-    background-image: url("assets/logo.png");
+
     background-size: cover;
 }
 
@@ -100,4 +100,9 @@ footer{
 
 main>header{
     text-align: center;
+}
+
+.img-slideshow{
+    height: 300px;
+    width: 300px;
 }

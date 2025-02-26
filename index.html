@@ -3,30 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Komatsu</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css\styles.css">
+<style>
+
+
+    @media only screen and (max-width: 600px) {
+     #main-header {
+          flex-direction: column;
+     }
+
+.menu{
+     flex-direction: column;
+     width: 100%;
+}
+.logo-company{
+     margin-bottom: 14px;
+}
+    }
+
+</style>
+
+
 </head>
 <body>
-    <!-- Header & Navigation -->
-     <Header id="main-header">
-        
-        <!-- Logo Company -->
-<div class="logo-company">
 
-</div>
+     <script> src="script.js"</script>
 
-<nav>
+    <!-- Header & Navigation -->   
+     <header id="main-header">
+
+ <!-- Logo Company -->
+ <img class="logo-company" alt="komatsu-logo"  src="assets/logo.png" /> 
+ 
+     <nav class="menu">
     <a href="" class="no-border-radius-right">Home</a>
     <a href="#our-package-section" class="no-border-radius">Our content</a>
      <a href="#call-us-section" class="no-border-radius-left">Call Us</a>
+     
 </nav>
      </Header>
 <hr>
 
 <!-- main content -->
      <main>
+
+          <div>
+               <img 
+               class="img-slideshow"
+               src="assets/banner-auto-slide/gambar (1).png"
+               />
+               <img 
+               class="img-slideshow"
+               src="assets/banner-auto-slide/gambar (2).png"
+               />
+               <img 
+               class="img-slideshow"
+               src="assets/banner-auto-slide/gambar (3).png"
+               />
+               <button onclick="plusDivs(-1)">Previus</button>
+               <button onclick="plusDivs(1)">next</button>
+          </div>
+
+          <script>
+               var slideIndex = 1;
+               showDivs(slideIndex);
+
+               function plusDivs(n) {
+                    showDivs(slideIndex += n);
+               }
+          
+          function showDivs(n){
+               var i;
+               var imgList = document.getElementsByClassName("img-slideshow");
+               if (n > imgList.length) slideIndex =1;
+               else if (n < 1) slideIndex = imgList.length;
+
+               for (i = 0; i < imgList.length; i++) {
+                    imgList[i].style.display = "none";
+               }
+
+               // karena array maka perlu mengurangi -1a sebab array mulai dari 0
+               imgList[slideIndex -1].style.display = "block";   
+
+              setInterval(() => {
+               plusDivs(1);
+              }, 3000);
+          }
+          
+          </script>
+
+
+
+
+
+
 <header >
 <h1>your travel agent</h1>
 <h4>your happines is our happines</h4>
